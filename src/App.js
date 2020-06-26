@@ -15,9 +15,9 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header />
-
       <Router>
+        <Header />
+
         <Switch>
           <Route exact path="/" component={HomeView} />
           <Route exact path="/search/:searchTerm">
