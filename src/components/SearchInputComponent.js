@@ -10,9 +10,8 @@ const SearchInputComponent = () => {
   };
 
   const handleOnKeyDown = (e) => {
-    console.log(">>>>>history", history);
     if (e.key === "Enter") {
-      history.push("search/" + searchTerm);
+      history.push("/search/" + searchTerm);
     }
   };
 

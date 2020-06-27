@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/search/:searchTerm">
             <SearchView />
           </Route>
-          <Route exact path={["/search/", "/search"]}>
+          <Route exact path={["/search/", "/search", "/*/*/*"]}>
             <Redirect to="/" />
           </Route>
         </Switch>
