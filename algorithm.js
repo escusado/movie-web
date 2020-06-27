@@ -15,12 +15,15 @@ console.log("initial list", list);
 3. si el indice 1 es mayor hago el switch (los cambio de posicion)
 4. y asi sucesivamente
 
-empezar iteracion
+empezar iteracion varias veces
 contador
 array nuevo con nuevos valores
+
 recursividad? hasta que sucede algo
 ocupar un contador y este contador me estaria sumando cada que yo tengo que hacer un cambio de valor hasta que el contador sea igual a 0 entonces estaria dejandose de llamar asi misma la fuincion
+
 */
+
 const myIterator = function () {
   for (let i = 0; i < list.length; i++) {
     if (list[i] > list[i + 1]) {
@@ -28,8 +31,7 @@ const myIterator = function () {
       const temp = list[i + 1];
       list[i + 1] = list[i];
       list[i] = temp;
-    }else{
-      if
+    } else {
     }
     console.log(">for", i, list);
   }
